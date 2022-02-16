@@ -176,11 +176,18 @@ button {
   @media (max-width: 720px) {
     .features {
         padding: 50px 10px 50px 10px;
-        grid-template-columns: auto;
     }
   
     .cards {
-        grid-template-columns: auto;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .card {
+      padding: 35px 40px 25px 40px;
+      margin: 15px 0px;
+      border-radius: 5px;
+      border: 1px solid #D9E4E6;
     }
   
     .features__feedback {
@@ -220,13 +227,22 @@ button {
  }
  
  @media (max-width: 1024px) {
-     .features {
+    .features {
         padding: 50px 10px 50px 10px;
-        grid-template-columns: auto;
     }
-     .cards {
-        grid-template-columns: auto;
+     
+    .cards {
+      display: flex;
+      flex-direction: column;
     }
+  
+    .card {
+      padding: 35px 40px 25px 40px;
+      margin: 15px 0px;
+      border-radius: 5px;
+      border: 1px solid #D9E4E6;
+    }
+    
     .about {
         padding: 115px 20px;
     }
@@ -250,11 +266,20 @@ button {
  @media (max-width: 720px) {
     .features {
     padding: 50px 10px 50px 10px;
-    grid-template-columns: auto;
     }
+    
     .cards {
-    grid-template-columns: auto;
+      display: flex;
+      flex-direction: column;
     }
+  
+    .card {
+      padding: 35px 40px 25px 40px;
+      margin: 15px 0px;
+      border-radius: 5px;
+      border: 1px solid #D9E4E6;
+    }
+
     header {
         padding: 10px;
     }
@@ -316,6 +341,7 @@ button {
  .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  
  }
  .card {
   padding: 35px 40px 25px 40px;
