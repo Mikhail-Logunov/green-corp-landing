@@ -268,7 +268,7 @@ button {
     color: #ff7039;
   }
   .promo__image {
-    background-image: url('../green-corp-landing/img/promo.jpg');
+    background-image: url(img/promo.jpg);
       width: 50%;
       flex-shrink: 0;
       background-size: cover;
@@ -305,12 +305,12 @@ button {
     margin-top: 20px;
     font-size: 18px;
     padding: 15px 30px 15px 30px;
-    font-weight: 600px;
-  }
-  .promo__button button i {
     font-style: normal;
-    font-size: 18px;
-    
+    font-weight: 600;
+  }
+  .fa-chevron-right {
+    font-size: 15px;
+    margin-left: 5px;
   }
 
   @media (max-width: 720px) {
@@ -391,15 +391,15 @@ button {
       margin-right: 0;
       margin-bottom: 30px;
     }
-    .promo__image {
-      background-size: 100%, 500px;
-    }
     .promo {
       display: flex;
       flex-direction: column-reverse;
     }
     .promo__right {
-      padding: 50px 10px;
+      padding: 50px 10px 50px 10px;
+    }
+    .promo__image {
+      background-size: auto 500px;
     }
  }
   
@@ -472,12 +472,16 @@ button {
       margin-right: 0;
       margin-bottom: 30px;
     }
-    .promo__image {
-      background-size: 100%, 500px;
-    }
+    
     .promo {
       display: flex;
       flex-direction: column-reverse;
+    }
+    .promo__right {
+      padding: 50px 10px 50px 10px;
+    }
+    .promo__image {
+      background-size: auto 500px;
     }
  }
  
